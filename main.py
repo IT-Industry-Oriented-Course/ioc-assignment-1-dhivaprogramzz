@@ -57,7 +57,7 @@ def main():
     dry_run = "--dry-run" in sys.argv or "-d" in sys.argv
     
     if dry_run:
-        print("\n🔍 DRY-RUN MODE: No actual API calls will be made\n")
+        print("\n DRY-RUN MODE: No actual API calls will be made\n")
     
     agent = ClinicalWorkflowAgent(
         api_client=api_client,
@@ -77,12 +77,12 @@ def main():
     if len(sys.argv) > 1 and sys.argv[1] not in ["--dry-run", "-d", "--interactive", "-i"]:
         # Custom request from command line
         user_input = " ".join(sys.argv[1:])
-        print(f"\n📝 Processing request: {user_input}\n")
+        print(f"\n Processing request: {user_input}\n")
         result = agent.process_request(user_input)
         print_result(result)
     elif "--interactive" in sys.argv or "-i" in sys.argv:
         # Interactive mode
-        print("\n💬 Interactive Mode - Type your requests (or 'quit' to exit)\n")
+        print("\nInteractive Mode - Type your requests (or 'quit' to exit)\n")
         while True:
             try:
                 user_input = input("> ").strip()
@@ -100,7 +100,7 @@ def main():
                 print(f"\nError: {e}\n")
     else:
         # Run example requests
-        print("\n📋 Running Example Requests\n")
+        print("\n Running Example Requests\n")
         for i, request in enumerate(example_requests, 1):
             print(f"\nExample {i}: {request}")
             result = agent.process_request(request)
