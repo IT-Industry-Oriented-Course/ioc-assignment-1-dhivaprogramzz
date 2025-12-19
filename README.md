@@ -64,16 +64,6 @@ ioc-cursor/
    pip install -r requirements.txt
    ```
 
-4. **Set up HuggingFace API key (optional):**
-   
-   Create a `.env` file in the project root:
-   ```
-   HUGGINGFACE_API_KEY=your_api_key_here
-   ```
-   
-   Get your API key from: https://huggingface.co/settings/tokens
-   
-   **Note**: The agent works without an API key using a fallback execution mode, but full LLM capabilities require a HuggingFace API key.
 
 ## Usage
 
