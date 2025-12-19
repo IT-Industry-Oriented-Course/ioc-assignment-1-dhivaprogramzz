@@ -6,24 +6,24 @@ The Clinical Workflow Automation Agent is built with a modular architecture that
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    User Input (Natural Language)             │
+│                    User Input (Natural Language)            │
 └───────────────────────┬─────────────────────────────────────┘
                         │
                         ▼
 ┌─────────────────────────────────────────────────────────────┐
-│              ClinicalWorkflowAgent                           │
+│              ClinicalWorkflowAgent                          │
 │  ┌──────────────────────────────────────────────────────┐   │
 │  │  Request Parser (_parse_request)                     │   │
 │  │  - Extracts intent and parameters                    │   │
 │  │  - Determines which functions to call                │   │
 │  └──────────────────────────────────────────────────────┘   │
 │  ┌──────────────────────────────────────────────────────┐   │
-│  │  Safety Checks                                        │   │
+│  │  Safety Checks                                       │   │
 │  │  - Medical advice refusal                            │   │
 │  │  - Input validation                                  │   │
 │  └──────────────────────────────────────────────────────┘   │
 │  ┌──────────────────────────────────────────────────────┐   │
-│  │  Function Executor                                    │   │
+│  │  Function Executor                                   │   │
 │  │  - Sequential function calling                       │   │
 │  │  - Context chaining                                  │   │
 │  └──────────────────────────────────────────────────────┘   │
@@ -31,7 +31,7 @@ The Clinical Workflow Automation Agent is built with a modular architecture that
 │  │  Audit Logger                                         │   │
 │  │  - Logs all actions                                   │   │
 │  │  - Compliance tracking                                │   │
-│  └──────────────────────────────────────────────────────┘   │
+│  └──────────────────────────────────────────────────────┘    │
 └───────────────────────┬─────────────────────────────────────┘
                         │
                         ▼
