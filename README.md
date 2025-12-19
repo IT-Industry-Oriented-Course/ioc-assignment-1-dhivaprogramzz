@@ -2,7 +2,7 @@
 
 A function-calling LLM agent for clinical workflow automation that acts as an intelligent coordinator for healthcare administrative tasks. This agent helps with patient search, insurance eligibility checks, appointment scheduling, and care coordination.
 
-## ⚠️ Important Disclaimer
+##  Important Disclaimer
 
 **This agent does NOT provide medical advice, diagnosis, or treatment recommendations.** It is designed solely for administrative workflow automation tasks like:
 - Patient record searches
@@ -12,13 +12,13 @@ A function-calling LLM agent for clinical workflow automation that acts as an in
 
 ## Features
 
-✅ **Function Calling**: Uses structured function schemas (FHIR-style) for deterministic API interactions  
-✅ **Safety & Validation**: Input validation, safety checks, and medical advice refusal  
-✅ **Audit Logging**: Comprehensive logging for compliance and auditability  
-✅ **Dry-Run Mode**: Test workflows without executing actual API calls  
-✅ **Mock APIs**: Sandbox healthcare APIs for testing and demonstration  
-✅ **LangChain Integration**: Built with LangChain for LLM orchestration  
-✅ **HuggingFace Support**: Compatible with HuggingFace models (optional)
+ **Function Calling**: Uses structured function schemas (FHIR-style) for deterministic API interactions  
+ **Safety & Validation**: Input validation, safety checks, and medical advice refusal  
+ **Audit Logging**: Comprehensive logging for compliance and auditability  
+ **Dry-Run Mode**: Test workflows without executing actual API calls  
+ **Mock APIs**: Sandbox healthcare APIs for testing and demonstration  
+ **LangChain Integration**: Built with LangChain for LLM orchestration  
+ **HuggingFace Support**: Compatible with HuggingFace models (optional)
 
 ## Project Structure
 
@@ -48,7 +48,7 @@ ioc-cursor/
    cd ioc-cursor
    ```
 
-2. **Create a virtual environment (recommended):**
+2. **Create a virtual environment :**
    ```bash
    python -m venv venv
    
@@ -252,4 +252,3 @@ For questions or issues, please refer to the assignment requirements or contact 
 - Enhance LLM capabilities
 - Implement proper security measures
 - Comply with healthcare regulations (HIPAA, etc.)
->>>>>>> f2031c9 (Initial commit)
